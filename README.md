@@ -176,8 +176,7 @@ The full, authoritative list of flags lives in
 The paper also evaluates the framework on **NCB (Neural Concept Binder)**
 encodings of **CLEVR-Hans3**. That code lives in a companion repository:
 
-<!-- TODO: replace with the real URL once the NCB companion repo is public -->
-➡️ **[Neural-Concept-Verifier-NCB](https://github.com/ZIB-IOL/Neural-Concept-Verifier-NCB)** — *coming soon.*
+➡️ **[ZIB-IOL/Neural-Concept-Verifier-NCB](https://github.com/ZIB-IOL/Neural-Concept-Verifier-NCB)** — the NCB / CLEVR-Hans3 experiments.
 
 ## Citation
 
