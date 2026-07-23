@@ -25,8 +25,8 @@ informative (high *completeness*).
 - [Usage](#usage)
 - [Datasets](#datasets)
 - [Models & key arguments](#models--key-arguments)
+- [CLEVR-Hans (NCB) experiments](#clevr-hans-ncb-experiments)
 - [Citation](#citation)
-- [Acknowledgements](#acknowledgements)
 
 ## Installation
 
@@ -191,8 +191,3 @@ encodings of **CLEVR-Hans3**. That code lives in a companion repository:
   year    = {2025}
 }
 ```
-
-## Acknowledgements
-
-This project builds on [SpLiCE](https://github.com/AI4LIFE-GROUP/SpLiCE) for
-concept encodings. Please cite the SpLiCE paper if you use this code.
