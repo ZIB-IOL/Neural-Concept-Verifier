@@ -1,0 +1,64 @@
+command:
+  - ${interpreter}
+  - ${program}
+  - ${args}
+  - --wandb
+
+description: DCR Baseline on CIFAR-100 with hyperparameter search
+
+method: grid
+
+metric:
+  goal: maximize
+  name: test_accuracy  # For CoCoLogic, use test_balanced_accuracy
+
+name: DCR Multi-Dataset Baseline
+
+parameters:
+  dataset:
+    values:
+      - cifar100
+      # - imagenet  # Uncomment for ImageNet experiments
+      # - cocologic10  # Uncomment for CoCoLogic10 experiments
+  
+  root_dir:
+    value: ./data
+  
+  vocab_size:
+    values:
+      - 1000
+      - 3000
+      - 10000
+  
+  emb_dim:
+    values:
+      - 8
+      - 16
+      - 32
+  
+  lr:
+    values:
+      - 0.001
+      - 0.0001
+  
+  lambda_task:
+    values:
+      - 0.5
+      - 1.0
+  
+  batch_size:
+    values:
+      - 128
+  
+  epochs:
+    values:
+      - 100
+  
+  num_workers:
+    value: 4
+  
+  device:
+    value: cuda
+
+program: src/train_dcr_cifar100.py
+

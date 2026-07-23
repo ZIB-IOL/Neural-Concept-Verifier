@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.vscode/
+*.pth
+*.pt
+*.h5
+checkpoints/
+embeddings/
+data/
+wandb/
+analysis_results/
